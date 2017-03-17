@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<%- include('header') %>
+<body>
+<h1><%= name.toUpperCase() %></h1>
+<p>hello, <%= name %></p>
+<ul>
+<% for(var i=0; i<supplies.length; i++){ %>
+    <li><%= supplies[i] %></li>
+<% } %>
+</ul>
+<%- include('footer')%>
+<script type="text/javascript" src="/javascripts/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/users.js"></script>
+</body>
+</html>
